@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout with BEM, SASS</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section class="main">
+      <header class="header">
+        <img
+          class="header__logo"
+          src="./images/logo.svg"
+          alt="Logo trang web"
+        />
+        <ul class="navbar">
+          <li class="navbar__item">home</li>
+          <li class="navbar__item">hotels</li>
+          <li class="navbar__item">restaurants</li>
+          <li class="navbar__item">tours</li>
+          <li class="navbar__item">destinations</li>
+          <li class="navbar__item">activities</li>
+          <li class="navbar__item">contact</li>
+        </ul>
+        <div class="user">
+          <div class="user-data">
+            <p class="user-data__holla">Holla,</p>
+            <p class="user-data__name">Ales Nessetril</p>
+          </div>
+          <img
+            class="user__avatar"
+            src="./images/user-photo.svg"
+            alt="avater user"
+          />
+          <div class="user__notification"></div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="content-discover">
+          <p class="content-discover__title">
+            Discover the most engaging places
+          </p>
+          <button class="content-discover__btn">
+            <img src="./images/discover-icon.svg" alt="discover-icon" />Discover
+            on 3D Globe
+          </button>
+        </div>
+        <div class="content-search">
+          <ul class="search-list">
+            <li class="search-list__item">
+              <img src="./images/location.svg" alt="location icon" />
+              <div class="search-item__content">
+                <p class="content__title">Location</p>
+                <p>Explore nearby destinations</p>
+              </div>
+            </li>
+            <li class="search-list__item">
+              <img src="./images/activity.svg" alt="location icon" />
+              <div class="search-item__content">
+                <p class="content__title">Activity</p>
+                <p>All Activities</p>
+              </div>
+            </li>
+            <li class="search-list__item">
+              <img src="./images/calendar.svg" alt="location icon" />
+              <div class="search-item__content">
+                <p class="content__title">When</p>
+                <p>Choose a Date</p>
+              </div>
+            </li>
+            <li class="search-list__item">
+              <img src="./images/user.svg" alt="location icon" />
+              <div class="search-item__content">
+                <p class="content__title">Guests</p>
+                <p>1 guest</p>
+              </div>
+            </li>
+          </ul>
+
+          <button class="content-search__btn">
+            <img src="./images/search.svg" alt="search icon" />
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
