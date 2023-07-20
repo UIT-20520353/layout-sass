@@ -1,0 +1,47 @@
+$primary-font: "Poppins", sans-serif;
+$margin-x: 6rem;
+
+.destinations {
+  margin-left: $margin-x;
+  margin-right: $margin-x;
+  margin-top: 6rem;
+
+  font-family: $primary-font;
+
+  .destinations__title {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 600;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .place-list {
+    margin-top: 3.25rem;
+
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    column-gap: 1.5rem;
+
+    .place__item {
+      .place__name {
+        margin-top: 0.25rem;
+
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+      }
+      .place__location {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+        color: #979797;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

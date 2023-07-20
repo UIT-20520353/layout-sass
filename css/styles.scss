@@ -4,6 +4,13 @@ $primary-font: "Poppins", sans-serif;
 $header-heigh: 5.875rem;
 $search-item-padding: 0.75rem;
 
+@import "destinations";
+@import "hotels-restaurants";
+@import "tips";
+@import "activities";
+@import "about-us";
+@import "footer";
+
 body {
   margin: 0;
   padding: 0;

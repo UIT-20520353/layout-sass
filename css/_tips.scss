@@ -1,0 +1,120 @@
+$primary-font: "Poppins", sans-serif;
+$margin-x: 6rem;
+
+.tips {
+  margin-left: $margin-x;
+  margin-right: $margin-x;
+  margin-top: 4.25rem;
+
+  font-family: $primary-font;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      font-size: 2rem;
+      line-height: 3rem;
+      font-weight: 600;
+
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .btn-viewmore {
+      background-color: #f6f4ff;
+      color: #7b61ff;
+
+      padding: 0.625rem;
+
+      border: 0;
+      border-radius: 0.75rem;
+
+      width: 6.563rem;
+      height: 2.5rem;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+
+      cursor: pointer;
+
+      span {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+    }
+  }
+
+  .post-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.875rem;
+
+    margin-top: 2.25rem;
+
+    .post__item {
+      display: flex;
+      align-items: stretch;
+      flex-direction: row;
+      column-gap: 1.875rem;
+
+      .post__content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+
+        .post__title {
+          margin-top: 0;
+          margin-bottom: 0;
+
+          font-size: 1.5rem;
+          line-height: 2.25rem;
+          font-weight: 600;
+        }
+
+        .post__detail {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          font-weight: 400;
+
+          color: #979797;
+
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 6;
+        }
+
+        .post__footer {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          column-gap: 0.875rem;
+
+          .footer__item {
+            display: flex;
+            flex-direction: row;
+            column-gap: 0.25rem;
+
+            p {
+              font-size: 0.75rem;
+              line-height: 1rem;
+              font-weight: 400;
+
+              color: #979797;
+
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

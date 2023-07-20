@@ -1,0 +1,71 @@
+$primary-font: "Poppins", sans-serif;
+$margin-x: 6rem;
+
+.activities {
+  margin-left: $margin-x;
+  margin-right: $margin-x;
+  margin-top: 4.25rem;
+
+  font-family: $primary-font;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      font-size: 2rem;
+      line-height: 3rem;
+      font-weight: 600;
+
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .btn-viewmore {
+      background-color: #f6f4ff;
+      color: #7b61ff;
+
+      padding: 0.625rem;
+
+      border: 0;
+      border-radius: 0.75rem;
+
+      width: 6.563rem;
+      height: 2.5rem;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+
+      cursor: pointer;
+
+      span {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+    }
+  }
+
+  .activty-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 1.875rem;
+
+    margin-top: 2.25rem;
+
+    .activity {
+      p {
+        margin-top: 0.875rem;
+        margin-bottom: 0;
+
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,4 +1,418 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+.destinations {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 6rem;
+  font-family: "Poppins", sans-serif;
+}
+.destinations .destinations__title {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.destinations .place-list {
+  margin-top: 3.25rem;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  column-gap: 1.5rem;
+}
+.destinations .place-list .place__item .place__name {
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+.destinations .place-list .place__item .place__location {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #979797;
+}
+.destinations .place-list .place__item p {
+  margin: 0;
+}
+
+.hotels-restaurants {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 4.25rem;
+  font-family: "Poppins", sans-serif;
+}
+.hotels-restaurants .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.hotels-restaurants .header .title {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.hotels-restaurants .header .btn-viewmore {
+  background-color: #f6f4ff;
+  color: #7b61ff;
+  padding: 0.625rem;
+  border: 0;
+  border-radius: 0.75rem;
+  width: 6.563rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.hotels-restaurants .header .btn-viewmore span {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.hotels-restaurants .view-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 1.625rem;
+  margin-top: 2.25rem;
+}
+.hotels-restaurants .view-list .view__item .view__content {
+  margin-top: 0.5rem;
+}
+.hotels-restaurants .view-list .view__item .view__content .view__name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.hotels-restaurants .view-list .view__item .view__content .view__information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.125rem;
+}
+.hotels-restaurants .view-list .view__item .view__content .view__information .view__location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+.hotels-restaurants .view-list .view__item .view__content .view__information .view__location p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #979797;
+}
+.hotels-restaurants .view-list .view__item .view__content .view__information .view__rating {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.tips {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 4.25rem;
+  font-family: "Poppins", sans-serif;
+}
+.tips .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.tips .header .title {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.tips .header .btn-viewmore {
+  background-color: #f6f4ff;
+  color: #7b61ff;
+  padding: 0.625rem;
+  border: 0;
+  border-radius: 0.75rem;
+  width: 6.563rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.tips .header .btn-viewmore span {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.tips .post-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1.875rem;
+  margin-top: 2.25rem;
+}
+.tips .post-list .post__item {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  column-gap: 1.875rem;
+}
+.tips .post-list .post__item .post__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.tips .post-list .post__item .post__content .post__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+}
+.tips .post-list .post__item .post__content .post__detail {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #979797;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+.tips .post-list .post__item .post__content .post__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.875rem;
+}
+.tips .post-list .post__item .post__content .post__footer .footer__item {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.25rem;
+}
+.tips .post-list .post__item .post__content .post__footer .footer__item p {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: #979797;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.activities {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 4.25rem;
+  font-family: "Poppins", sans-serif;
+}
+.activities .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.activities .header .title {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.activities .header .btn-viewmore {
+  background-color: #f6f4ff;
+  color: #7b61ff;
+  padding: 0.625rem;
+  border: 0;
+  border-radius: 0.75rem;
+  width: 6.563rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.activities .header .btn-viewmore span {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.activities .activty-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 1.875rem;
+  margin-top: 2.25rem;
+}
+.activities .activty-list .activity p {
+  margin-top: 0.875rem;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.about-us {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 7.375rem;
+  margin-bottom: 7.375rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1.875rem;
+}
+.about-us p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.about-us .about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 1.875rem;
+}
+.about-us .about__content .about__title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.about-us .about__content .about_detail {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #5b5b5b;
+}
+.about-us .about__content .about__btn-readmore {
+  background-color: #f6f4ff;
+  color: #7b61ff;
+  padding: 0.625rem;
+  border: 0;
+  border-radius: 0.75rem;
+  width: 8.313rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.about-us .about__content .about__btn-readmore span {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+footer {
+  font-family: "Poppins", sans-serif;
+  padding: 6rem;
+  background-color: #f9f9f9;
+}
+footer .content {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  column-gap: 1.875rem;
+}
+footer .content .content__socials {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.875rem;
+  grid-column: 1/3;
+}
+footer .content .content__socials .content__logo {
+  width: 5.5rem;
+  height: 2.25rem;
+}
+footer .content .content__socials p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #979797;
+}
+footer .content .content__socials .social-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.875rem;
+}
+footer .content .content__contact {
+  grid-column: 3/6;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 2.5rem;
+}
+footer .content .content__contact h3 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin: 0;
+}
+footer .content .content__contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1.125rem;
+}
+footer .content .content__contact ul li {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #979797;
+  margin-bottom: 9px;
+}
+footer .content .content__subcribe {
+  grid-column: 6/8;
+}
+footer .content .content__subcribe h3 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin: 0;
+}
+footer .content .content__subcribe .subcribe__detail {
+  margin-top: 1.125rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.875rem;
+}
+footer .content .content__subcribe .subcribe__detail .subcribe__email {
+  border: 0;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+}
+footer .content .content__subcribe .subcribe__detail .subcribe__email .detail-email p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+footer .content .content__subcribe .subcribe__detail .subcribe__email .detail-email p:first-child {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #979797;
+}
+footer .content .content__subcribe .subcribe__detail .subcribe__btn {
+  padding: 1.5rem;
+  border: 0;
+  border-radius: 0.75rem;
+  background-color: #7b61ff;
+}
+
 body {
   margin: 0;
   padding: 0;
